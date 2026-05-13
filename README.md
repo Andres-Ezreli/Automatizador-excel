@@ -11,16 +11,34 @@ El equipo debe tener instalado **Python 3.10+** y las siguientes librerías. Abr
 
 El sistema utiliza una arquitectura de "ancla" para encontrar el código de Python sin importar dónde esté guardado el Excel. Mantenga esta estructura:
 
+```text
 [Carpeta Raíz del Proyecto]
  ├── stamper/               # MOTOR DE PYTHON: Aquí van todos los scripts .py
+ │   ├── README.md
+ │   ├── audit.py
+ │   ├── config.py
+ │   ├── excel_reader.py
+ │   ├── file_matcher.py
+ │   ├── folder_walker.py
+ │   ├── fonogramas.py
+ │   ├── fonogramas_manual.py
+ │   ├── mp3_mover.py
+ │   ├── run.py
+ │   ├── stamp_one.py
+ │   ├── stamper.py
+ │   ├── sticker_builder.py
+ │   └── text_utils.py
+ │
  ├── Carlos Vives/          # Carpeta de Proyecto 1 (Ejemplo)
  │   ├── INVENTARIO.xlsm      # El Archivo Excel del artista
  │   ├── Input/               # PDFs crudos
  │   └── Output/              # ANCLA: PDFs estampados y MP3s caen aquí
+ │
  └── Otro Artista/          # Carpeta de Proyecto 2
      ├── INVENTARIO.xlsm      
      ├── Input/               
      └── Output/              
+```          
 
 ## ⚙️ Configuración Inicial (¡Muy Importante!)
 
